@@ -475,6 +475,8 @@ strong {
   position: relative;
   overflow: hidden;
   margin-top: 86px;
+  text-align: left;
+  background-color: #f8f9fa;
 }
 
 .site-header.section-padding {
@@ -483,8 +485,14 @@ strong {
 }
 
 .site-header.section-padding-img {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .site-header.section-padding-img {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 
 .header-image {
@@ -640,7 +648,7 @@ strong {
 
 .custom-circle-image.team-image {
   width: 85px;
-  height: 85px;
+  height: auto;
 }
 
 /*---------------------------------------
@@ -1119,28 +1127,20 @@ button:focus:not(:focus-visible) {
     width: 100% !important;
   }
 
-  .site-header.section-padding,
-  .section-padding {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .site-header-image.section-padding {
     padding-bottom: 0;
   }
 
-  .header-info {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-
   .header-image {
-    position: relative;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    height: auto;
+      position: relative;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      max-height: 50vw;
+      object-fit: cover;
+      object-position: center;
   }
 
   .slick-testimonial-caption {
@@ -1174,4 +1174,3 @@ button:focus:not(:focus-visible) {
     bottom: 0;
   }
 }
-
