@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Ćulum Stolarija - Vaš pouzdan partner za izradu nameštaja i vikendica po meri. Kvalitetna izrada, tradicionalno umeće i moderan dizajn."
+    />
+    <meta name="author" content="Ćulum Stolarija" />
+
+    <title>Ćulum Stolarija - Galerija</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="preloader">
+      <div class="spinner">
+        <span class="sk-inner-circle"></span>
+      </div>
+    </section>
+
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <strong><span>Ćulum</span> Stolarija</strong>
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">O nama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="gallery.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Česta pitanja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="featured-product section-padding">
+        <div class="container">
+          <div class="row g-1" id="galleryRow">
+            <div class="col-12 text-center">
+              <h2 class="mb-5">Galerija naših projekata</h2>
+            </div>
+            <!-- Thumbnails dynamically loaded here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Overlay for Full-Screen Carousel -->
+      <div id="imageOverlay" class="image-overlay">
+        <button
+          id="closeOverlay"
+          class="btn-close btn-close-white"
+          aria-label="Close"
+        ></button>
+        <div id="imageCarousel" class="image-carousel">
+          <!-- Carousel slides dynamically loaded -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-10 me-auto mb-4">
+            <h4 class="text-white mb-3">
+              <a href="index.html">Ćulum</a> Stolarija
+            </h4>
+            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
+              Copyright © 2025 <strong>Ćulum Stolarija</strong>
+            </p>
+            <br />
+          </div>
+          <div class="col-lg-3 col-4">
+            <h5 class="text-white mb-3">Društvene mreže</h5>
+            <ul class="social-icon">
+              <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+              <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+              <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+              <li><a href="#" class="social-icon-link bi-skype"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
