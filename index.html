@@ -1,417 +1,557 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="Ćulum Stolarija - Vaš pouzdan partner za izradu nameštaja i vikendica po meri. Kvalitetna izrada, tradicionalno umeće i moderan dizajn.">
-        <meta name="author" content="Ćulum Stolarija">
-
-        <title>Ćulum Stolarija - Nameštaj i Vikendice</title>
-
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/slick.css"/>
-
-        <link href="css/custom.css" rel="stylesheet">
-    </head>
-    
-    <body>
-
-        <section class="preloader">
-            <div class="spinner">
-                <span class="sk-inner-circle"></span>
-            </div>
-        </section>
-    
-        <main>
-
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <a class="navbar-brand" href="index.html">
-                        <strong><span>Ćulum</span> Stolarija</strong>
-                    </a>
-                    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Početna</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">O nama</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="products.html">Usluge</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="faq.html">Česta pitanja</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Kontakt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <section class="slick-slideshow">   
-                <div class="slick-custom">
-                    <img src="images/slideshow/wooden-cabin-forest.jpg" class="img-fluid" alt="Drvena vikendica u šumi">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Vikendice po meri</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">Izrađujemo unikatne drvene vikendice koje spajaju tradicionalno umeće i moderan dizajn.</p>
-
-                                    <a href="about.html" class="btn custom-btn">Saznaj više o nama</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slick-custom">
-                    <img src="images/slideshow/custom-furniture-workshop.jpg" class="img-fluid" alt="Radionica za izradu nameštaja">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Kvalitetan nameštaj</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">Ručno izrađen nameštaj po vašim željama, uz naglasak na trajnost i estetiku.</p>
-
-                                    <a href="products.html" class="btn custom-btn">Pogledaj proizvode</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slick-custom">
-                    <img src="images/slideshow/carpenter-at-work.jpg" class="img-fluid" alt="Stolar na poslu">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title">Kontaktirajte nas</h1>
-
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">Imate ideju za projekat? Obratite nam se i zajedno ćemo je ostvariti!</p>
-
-                                    <a href="contact.html" class="btn custom-btn">Radite sa nama</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="about section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12 text-center">
-                            <h2 class="mb-5">Upoznajte <span>Ćulum</span> Stolariju</h2>
-                        </div>
-
-                        <div class="col-lg-2 col-12 mt-auto mb-auto">
-                            <ul class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">O nama</button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-youtube-tab" data-bs-toggle="pill" data-bs-target="#pills-youtube" type="button" role="tab" aria-controls="pills-youtube" aria-selected="true">Kako radimo?</button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="false">Usluge</button>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-10 col-12">
-                            <div class="tab-content mt-2" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                                    <div class="row">
-                                        <div class="col-lg-7 col-12">
-                                            <img src="images/wooden-furniture-workshop.jpg" class="img-fluid" alt="Radionica za izradu nameštaja">
-                                        </div>
-
-                                        <div class="col-lg-5 col-12">
-                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
-                                                <h4 class="mb-3">Kvalitetna izrada <span>po meri</span> <br>za vaš <span>dom</span></h4>
-
-                                                <p>Ćulum Stolarija nudi širok asortiman usluga, od izrade nameštaja po meri do gradnje vikendica. Naš tim kombinuje tradiciju sa modernim tehnikama kako bismo ispunili sve vaše zahteve.</p>
-
-                                                <p>Koristimo samo najkvalitetnije materijale i posvećeni smo svakom detalju u procesu izrade.</p>
-
-                                                <div class="mt-2 mt-lg-auto">
-                                                    <a href="about.html" class="custom-link mb-2">
-                                                        Saznaj više o nama
-                                                        <i class="bi-arrow-right ms-2"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="pills-youtube" role="tabpanel" aria-labelledby="pills-youtube-tab">
-
-                                    <div class="row">
-                                        <div class="col-lg-7 col-12">
-                                            <div class="ratio ratio-16x9">
-                                                <iframe src="https://www.youtube-nocookie.com/embed/QNgJjm0JX7Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-5 col-12">
-                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
-                                                <h4 class="mb-3">Način rada</h4>
-
-                                                <p>Više od 10 godina iskustva u stolarskom zanatu omogućava nam da svaki projekat završimo sa preciznošću i strašću.</p>
-
-                                                <p>Izrađujemo sve od kuhinja, plakara, do kompletnih drvenih vikendica, uz konsultacije sa klijentima u svakoj fazi projekta.</p>
-
-                                                <div class="mt-2 mt-lg-auto">
-                                                    <a href="contact.html" class="custom-link mb-2">
-                                                        Radite sa nama
-                                                        <i class="bi-arrow-right ms-2"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-12">
-                                            <img src="images/carpentry-tools.jpg" class="img-fluid" alt="Stolarski alati">
-                                        </div>
-
-                                        <div class="col-lg-5 col-12">
-                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
-                                                <h4 class="mb-3">Naše usluge</h4>
-
-                                                <p>Pružamo širok spektar stolarskih usluga, uključujući izradu nameštaja, unutrašnje enterijere i gradnju vikendica.</p>
-
-                                                <div class="skill-thumb mt-3">
-
-                                                    <strong>Izrada nameštaja</strong>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-                                                            </div>
-
-                                                    <strong>Gradnja vikendica</strong>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-                                                            </div>
-
-                                                    <strong>Enterijeri po meri</strong>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                                                            </div>
-
-                                                </div>
-                                                
-                                                <div class="mt-2 mt-lg-auto">
-                                                    <a href="products.html" class="custom-link mb-2">
-                                                        Pogledaj proizvode
-                                                        <i class="bi-arrow-right ms-2"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="front-product">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="images/cabin-interior.jpg" class="img-fluid" alt="Enterijer drvene vikendice">
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="px-5 py-5 py-lg-0">
-                                
-                                <h2 class="mb-4"><span>Vikendice</span> i nameštaj</h2>
-
-                                <p class="lead mb-4">Sve naše proizvode izrađujemo sa pažnjom i strašću, koristeći visokokvalitetno drvo i moderne tehnike.</p>
-
-                                <a href="products.html" class="custom-link">
-                                    Pogledaj proizvode
-                                    <i class="bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="featured-product section-padding">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-12 text-center">
-                            <h2 class="mb-5">Istaknuti proizvodi</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/product/kitchen-furniture.jpg" class="img-fluid product-image" alt="Kuhinja po meri">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <span class="product-alert me-auto">Novo</span>
-
-                                    <a href="#" class="bi-heart-fill product-icon"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Kuhinja po meri</a>
-                                        </h5>
-
-                                        <p class="product-p">Moderna kuhinja izrađena od punog drveta</p>
-                                    </div>
-
-                                    <small class="product-price text-muted ms-auto mt-auto mb-5">Kontaktirajte nas</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/product/wooden-cabin.jpeg" class="img-fluid product-image" alt="Drvena vikendica">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <span class="product-alert">Popularno</span>
-
-                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Drvena vikendica</a>
-                                        </h5>
-
-                                        <p class="product-p">Vikendica po meri za odmor u prirodi</p>
-                                    </div>
-
-                                    <small class="product-price text-muted ms-auto mt-auto mb-5">Kontaktirajte nas</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/product/custom-wardrobe.jpg" class="img-fluid product-image" alt="Plakar po meri">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Plakar po meri</a>
-                                        </h5>
-
-                                        <p class="product-p">Funkcionalan i estetski plakar za vaš prostor</p>
-                                    </div>
-
-                                    <small class="product-price text-muted ms-auto mt-auto mb-5">Kontaktirajte nas</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 text-center">
-                            <a href="products.html" class="view-all">Pogledaj sve proizvode</a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="site-footer">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Ćulum Stolarija - Vaš pouzdan partner za izradu nameštaja i vikendica po meri. Kvalitetna izrada, tradicionalno umeće i moderan dizajn."
+    />
+    <meta name="author" content="Ćulum Stolarija" />
+
+    <title>Ćulum Stolarija - Nameštaj i Vikendice</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="preloader">
+      <div class="spinner">
+        <span class="sk-inner-circle"></span>
+      </div>
+    </section>
+
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <strong><span>Ćulum</span> Stolarija</strong>
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Početna</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">O nama</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Usluge</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Česta pitanja</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="slick-slideshow">
+        <div class="slick-custom">
+          <img
+            src="images/slideshow/wooden-cabin-forest.jpg"
+            class="img-fluid"
+            alt="Drvena vikendica u šumi"
+          />
+
+          <div class="slick-bottom">
             <div class="container">
-                <div class="row">
+              <div class="row">
+                <div class="col-lg-6 col-10">
+                  <h1 class="slick-title">Vikendice po meri</h1>
 
-                    <div class="col-lg-3 col-10 me-auto mb-4">
-                        <h4 class="text-white mb-3"><a href="index.html">Ćulum</a> Stolarija</h4>
-                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2025 <strong>Ćulum Stolarija</strong></p>
-                        <br>
-                    </div>
+                  <p class="lead text-white mt-lg-3 mb-lg-5">
+                    Izrađujemo unikatne drvene vikendice koje spajaju
+                    tradicionalno umeće i moderan dizajn.
+                  </p>
 
-                    <div class="col-lg-3 col-4">
-                        <h5 class="text-white mb-3">Društvene mreže</h5>
-
-                        <ul class="social-icon">
-
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
-                        </ul>
-                    </div>
-
+                  <a href="about.html" class="btn custom-btn"
+                    >Saznaj više o nama</a
+                  >
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/Headroom.js"></script>
-        <script src="js/jQuery.headroom.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/custom.js"></script>
+        <div class="slick-custom">
+          <img
+            src="images/slideshow/custom-furniture-workshop.jpg"
+            class="img-fluid"
+            alt="Radionica za izradu nameštaja"
+          />
 
-    </body>
+          <div class="slick-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-10">
+                  <h1 class="slick-title">Kvalitetan nameštaj</h1>
+
+                  <p class="lead text-white mt-lg-3 mb-lg-5">
+                    Ručno izrađen nameštaj po vašim željama, uz naglasak na
+                    trajnost i estetiku.
+                  </p>
+
+                  <a href="products.html" class="btn custom-btn"
+                    >Pogledaj proizvode</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slick-custom">
+          <img
+            src="images/slideshow/carpenter-at-work.jpg"
+            class="img-fluid"
+            alt="Stolar na poslu"
+          />
+
+          <div class="slick-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-10">
+                  <h1 class="slick-title">Kontaktirajte nas</h1>
+
+                  <p class="lead text-white mt-lg-3 mb-lg-5">
+                    Imate ideju za projekat? Obratite nam se i zajedno ćemo je
+                    ostvariti!
+                  </p>
+
+                  <a href="contact.html" class="btn custom-btn"
+                    >Radite sa nama</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="mb-5">Upoznajte <span>Ćulum</span> Stolariju</h2>
+            </div>
+
+            <div class="col-lg-2 col-12 mt-auto mb-auto">
+              <ul
+                class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    O nama
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-youtube-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-youtube"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-youtube"
+                    aria-selected="true"
+                  >
+                    Kako radimo?
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-skill"
+                    aria-selected="false"
+                  >
+                    Usluge
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-10 col-12">
+              <div class="tab-content mt-2" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-7 col-12">
+                      <img
+                        src="images/wooden-furniture-workshop.jpg"
+                        class="img-fluid"
+                        alt="Radionica za izradu nameštaja"
+                      />
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                      <div
+                        class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5"
+                      >
+                        <h4 class="mb-3">
+                          Kvalitetna izrada <span>po meri</span> <br />za vaš
+                          <span>dom</span>
+                        </h4>
+
+                        <p>
+                          Ćulum Stolarija nudi širok asortiman usluga, od izrade
+                          nameštaja po meri do gradnje vikendica. Naš tim
+                          kombinuje tradiciju sa modernim tehnikama kako bismo
+                          ispunili sve vaše zahteve.
+                        </p>
+
+                        <p>
+                          Koristimo samo najkvalitetnije materijale i posvećeni
+                          smo svakom detalju u procesu izrade.
+                        </p>
+
+                        <div class="mt-2 mt-lg-auto">
+                          <a href="about.html" class="custom-link mb-2">
+                            Saznaj više o nama
+                            <i class="bi-arrow-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-youtube"
+                  role="tabpanel"
+                  aria-labelledby="pills-youtube-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-7 col-12">
+                      <div class="ratio ratio-16x9">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/QNgJjm0JX7Y?controls=0"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                      <div
+                        class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5"
+                      >
+                        <h4 class="mb-3">Način rada</h4>
+
+                        <p>
+                          Više od 10 godina iskustva u stolarskom zanatu
+                          omogućava nam da svaki projekat završimo sa
+                          preciznošću i strašću.
+                        </p>
+
+                        <p>
+                          Izrađujemo sve od kuhinja, plakara, do kompletnih
+                          drvenih vikendica, uz konsultacije sa klijentima u
+                          svakoj fazi projekta.
+                        </p>
+
+                        <div class="mt-2 mt-lg-auto">
+                          <a href="contact.html" class="custom-link mb-2">
+                            Radite sa nama
+                            <i class="bi-arrow-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="pills-skill-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-7 col-12">
+                      <img
+                        src="images/carpentry-tools.jpg"
+                        class="img-fluid"
+                        alt="Stolarski alati"
+                      />
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                      <div
+                        class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5"
+                      >
+                        <h4 class="mb-3">Naše usluge</h4>
+
+                        <p>
+                          Pružamo širok spektar stolarskih usluga, uključujući
+                          izradu nameštaja, unutrašnje enterijere i gradnju
+                          vikendica.
+                        </p>
+
+                        <div class="skill-thumb mt-3">
+                          <strong>Izrada nameštaja</strong>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-primary"
+                              role="progressbar"
+                              aria-valuenow="95"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 95%"
+                            ></div>
+                          </div>
+
+                          <strong>Gradnja vikendica</strong>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-primary"
+                              role="progressbar"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 85%"
+                            ></div>
+                          </div>
+
+                          <strong>Enterijeri po meri</strong>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-primary"
+                              role="progressbar"
+                              aria-valuenow="90"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 90%"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="mt-2 mt-lg-auto">
+                          <a href="products.html" class="custom-link mb-2">
+                            Pogledaj proizvode
+                            <i class="bi-arrow-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="front-product">
+        <div class="container-fluid p-0">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <img
+                src="images/cabin-interior.jpg"
+                class="img-fluid"
+                alt="Enterijer drvene vikendice"
+              />
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="px-5 py-5 py-lg-0">
+                <h2 class="mb-4"><span>Vikendice</span> i nameštaj</h2>
+
+                <p class="lead mb-4">
+                  Sve naše proizvode izrađujemo sa pažnjom i strašću, koristeći
+                  visokokvalitetno drvo i moderne tehnike.
+                </p>
+
+                <a href="products.html" class="custom-link">
+                  Pogledaj proizvode
+                  <i class="bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-product section-padding">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-12 text-center">
+              <h2 class="mb-5">Istaknuti proizvodi</h2>
+            </div>
+
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="p-0 add-shadow">
+                <div class="product-thumb">
+                  <img
+                    src="images/product/kitchen-furniture.jpg"
+                    class="img-fluid product-image"
+                    alt="Kuhinja po meri"
+                  />
+
+                  <div class="product-info d-flex bg-section">
+                    <div>
+                      <h5 class="product-title mb-0">Kuhinja po meri</h5>
+
+                      <p class="product-p">
+                        Moderna kuhinja izrađena od punog drveta
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="p-0 add-shadow">
+                <div class="product-thumb">
+                  <img
+                    src="images/product/wooden-cabin.jpeg"
+                    class="img-fluid product-image"
+                    alt="Drvena vikendica"
+                  />
+
+                  <div class="product-info d-flex bg-section">
+                    <div>
+                      <h5 class="product-title mb-0">Drvena vikendica</h5>
+
+                      <p class="product-p">
+                        Vikendica po meri za odmor u prirodi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="p-0 add-shadow">
+                <div class="product-thumb">
+                  <img
+                    src="images/product/custom-wardrobe.jpg"
+                    class="img-fluid product-image"
+                    alt="Plakar po meri"
+                  />
+
+                  <div class="product-info d-flex bg-section">
+                    <div>
+                      <h5 class="product-title mb-0">Plakar po meri</h5>
+
+                      <p class="product-p">
+                        Funkcionalan i estetski plakar za vaš prostor
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 text-center">
+              <a href="products.html" class="view-all"
+                >Pogledaj sve proizvode</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-10 me-auto mb-4">
+            <h4 class="text-white mb-3">
+              <a href="index.html">Ćulum</a> Stolarija
+            </h4>
+            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
+              Copyright © 2025 <strong>Ćulum Stolarija</strong>
+            </p>
+            <br />
+          </div>
+
+          <div class="col-lg-3 col-4">
+            <h5 class="text-white mb-3">Društvene mreže</h5>
+
+            <ul class="social-icon">
+              <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+              <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+              <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+              <li><a href="#" class="social-icon-link bi-skype"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

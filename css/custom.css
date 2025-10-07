@@ -2,26 +2,26 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                #FFFFFF;
-  --primary-color:              #35801e;
-  --section-bg-color:           #f0f8ff;
-  --dark-color:                 #000000;
-  --grey-color:                 #d0d1d1;
-  --p-color:                    #717275;
+  --white-color: #ffffff;
+  --primary-color: #35801e;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --grey-color: #d0d1d1;
+  --p-color: #717275;
 
-  --body-font-family:           'Inter', sans-serif;
+  --body-font-family: "Inter", sans-serif;
 
-  --h5-font-size:               24px;
-  --p-font-size:                20px;
-  --copyright-text-font-size:   16px;
-  --product-link-font-size:     14px;
-  --custom-link-font-size:      12px;
+  --h5-font-size: 24px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 16px;
+  --product-link-font-size: 14px;
+  --custom-link-font-size: 12px;
 
-  --font-weight-thin:           100;
-  --font-weight-light:          300;
-  --font-weight-normal:         400;
-  --font-weight-bold:           700;
-  --font-weight-black:          900;
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
 }
 
 body,
@@ -40,9 +40,9 @@ html {
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);    
-    position: relative;
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+  position: relative;
 }
 
 /*---------------------------------------
@@ -103,7 +103,7 @@ p {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -186,7 +186,7 @@ strong {
 }
 
 .spinner::before {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   top: 50%;
@@ -198,11 +198,13 @@ strong {
   border-radius: 50%;
   border: 1px solid #959595;
   border-top-color: var(--white-color);
-  animation: spinner .9s linear infinite;
+  animation: spinner 0.9s linear infinite;
 }
 
 @keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*---------------------------------------
@@ -214,7 +216,7 @@ strong {
   color: var(--white-color);
   font-size: var(--copyright-text-font-size);
   text-transform: uppercase;
-  padding: 16.50px 20px;
+  padding: 16.5px 20px;
 }
 
 .social-btn {
@@ -329,8 +331,10 @@ strong {
   transition: transform 300ms linear;
 }
 
-.navbar span, h2 span, h4 span {
-	color: var(--primary-color);
+.navbar span,
+h2 span,
+h4 span {
+  color: var(--primary-color);
 }
 
 .navbar.headroom--not-top {
@@ -373,7 +377,7 @@ strong {
   width: 100%;
   height: 2px;
   background: var(--grey-color);
-  content: '';
+  content: "";
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   -moz-transition: opacity 0.3s, -moz-transform 0.3s;
@@ -383,7 +387,7 @@ strong {
   transform: translateY(10px);
 }
 
-.navbar .nav-link.active::after, 
+.navbar .nav-link.active::after,
 .navbar .nav-link:hover::after {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -396,7 +400,7 @@ strong {
   color: var(--primary-color);
 }
 
-.nav-link:focus, 
+.nav-link:focus,
 .nav-link:hover {
   color: var(--p-color);
 }
@@ -424,7 +428,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -449,14 +454,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--dark-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon:before {
@@ -476,7 +482,7 @@ strong {
   overflow: hidden;
   margin-top: 86px;
   text-align: left;
-  background-color: #f8f9fa;
+  background-color: var(--section-bg-color);
 }
 
 .site-header.section-padding {
@@ -502,6 +508,18 @@ strong {
   width: 50%;
   height: 100%;
   object-fit: cover;
+}
+
+.bg-gray {
+  background-color: var(--grey-color);
+}
+
+.bg-section {
+  background-color: var(--section-bg-color);
+}
+
+.add-shadow {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 /*---------------------------------------
@@ -664,7 +682,7 @@ strong {
 }
 
 .slick-testimonial-caption {
-  quotes: '❝' '❞';
+  quotes: "❝" "❞";
   position: relative;
   padding: 5rem 7rem;
 }
@@ -743,8 +761,8 @@ section {
 }
 
 .about .nav-pills .nav-link:hover,
-.about .nav-pills .nav-link.active, 
-.about .nav-pills .show>.nav-link {
+.about .nav-pills .nav-link.active,
+.about .nav-pills .show > .nav-link {
   background: transparent;
   border-left-color: var(--primary-color);
   color: var(--primary-color);
@@ -776,7 +794,7 @@ button:focus:not(:focus-visible) {
 }
 
 .accordion-body {
-  border-top: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .accordion-button {
@@ -802,7 +820,7 @@ button:focus:not(:focus-visible) {
 .team-thumb {
   background: var(--white-color);
   position: relative;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   padding: 42px 32px;
 }
 
@@ -896,12 +914,12 @@ button:focus:not(:focus-visible) {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
   transition: all 0.5s ease-out;
 }
 
 .product-thumb:hover .product-image {
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .product-top {
@@ -970,12 +988,12 @@ button:focus:not(:focus-visible) {
   font-weight: var(--font-weight-normal);
 }
 
-.form-floating>label {
+.form-floating > label {
   color: var(--grey-color);
   font-weight: var(--font-weight-normal);
 }
 
-.contact-form button[type='submit'] {
+.contact-form button[type="submit"] {
   background: var(--dark-color);
   border: none;
   border-radius: 100px;
@@ -985,7 +1003,7 @@ button:focus:not(:focus-visible) {
   padding: 16px;
 }
 
-.contact-form button[type='submit']:hover {
+.contact-form button[type="submit"]:hover {
   background: var(--primary-color);
 }
 
@@ -1132,15 +1150,15 @@ button:focus:not(:focus-visible) {
   }
 
   .header-image {
-      position: relative;
-      top: auto;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      max-height: 50vw;
-      object-fit: cover;
-      object-position: center;
+    position: relative;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 50vw;
+    object-fit: cover;
+    object-position: center;
   }
 
   .slick-testimonial-caption {
