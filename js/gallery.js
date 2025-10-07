@@ -41,6 +41,8 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 1,
     adaptiveHeight: true,
+    touchThreshold: 10,
+    swipeToSlide: true,
     prevArrow:
       '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
     nextArrow:
